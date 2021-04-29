@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Contoh Progra Javascript</title>     
+	
+		<script language = "javascript">
+        function test ()
+        {
+            val1=window.prompt("input nilai (1-5):")
+            switch (val1)
+            {
+                case "1" :
+                document.write("Bilangan satu ")
+                break
+                case "2" :
+                document.write("Bilangan dua ")
+                break
+                case "3" :
+                document.write("Bilangan tiga ")
+                break
+                case "4" :
+                document.write("Bilangan empat ")
+                break
+                case "5" :
+                document.write("Bilangan lima ")
+                break
+                deafult :
+                document.write("Bilangan lainnya ") 
+
+            }
+        }
+		</script>
+</head>
+	<body>
+        <input type="button" name="button1" value="switch" onclick=test()>
+    </body>
+</html>

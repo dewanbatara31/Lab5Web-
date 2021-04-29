@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Tambahan.js"></script>
+    <title>FORM REGISTRASI SEDERHANA</title>
+    <style>
+		body{
+			background-image:url(begron.jpg);
+			background-size:cover;
+			background-attachment: fixed;
+		}
+		p{
+			color:red;
+		}
+	</style>
+</head>
+<body >
+</br>
+    <center><h1><font size="10" color="blue">FORM REGISTRASI SEDERHANA</font></h1></center>
+    <form action="" method="post" enctype="multipart/form-data">
+    <table border="0" cellspacing="10" width="800" align="center">
+    <tbody>
+</br>        
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>NAMA</b></font></td>
+        <td><font color="blue">:</font></td>
+        <td><input type="text" name="nama" placeholder="Nama lengkap" size="40" maxlength="30" autocomplete="off" autofocus required/></td>
+    </tr>
+</br>
+    
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>TTL</b></font></td>
+        <td><font color="blue">:</font></td>
+        <td><input type="date" name="tanggal" placeholder="Tgl Lahir" size="20" maxlength="10" required/></td>
+    </tr>
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<B>JENIS KELAMIN</B></font></td>
+        <td><font color="blue">:</font></td>
+        <td>
+            <input type="radio" name="jenis-kelamin" placeholder="Email"name="jenis_kelamin" value="laki-laki" required/><font color="blue"> Laki-laki </font>
+            <input type="radio" name="jenis-kelamin" placeholder="Email"name="jenis_kelamin" value="perempuan" required/><font color="blue"> Perempuan </font>
+        </td>
+    </tr>
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<B>AGAMA</B></font></td>
+        <td><font color="blue">:</font></td>
+        <td>
+            <select name="agama" id="agama" required onchange='changeAgama()'>
+            <option value=""> - Pilih Agama -</option>
+            <option value="1">Budha</option>
+            <option value="2">Hindu</option>
+            <option value="3">Islam</option>
+            <option value="4">Katolik</option>
+            <option value="5">Protestan</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Email</b></font></td>
+        <td><font color="blue">:</font></td>
+        <td><input type="email" name="stok" placeholder="Email" size="40" maxlength="100" required/></td>
+    </tr>
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<B>NOMOR HP<B></font></td>
+        <td><font color="blue">:</font></td>
+        <td><input type="tel" name="stok" placeholder="Nomor Handphone" size="20" maxlength="13" required/></td>
+    </tr>
+    <tr>
+        <td><font color="blue">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>ALAMAT</b></font></td>
+        <td><font color="blue">:</font></td>
+        <td><input type="alamat" name="alamat" placeholder="Alamat" size="30" maxlength="50" required/></td>
+    </tr>
+    <tr>
+        <td colspan="3"></br><center><button id="submit" disabled type="submit" name="simpan">Daftar</button></td></center>
+    </tr>
+</body>
+</html>
